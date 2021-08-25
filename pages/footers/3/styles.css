@@ -97,12 +97,3 @@ body {
   align-items: center;
   justify-content: center;
 }
-.footer #visual2 {
-  width: 100vw;
-  height: 100vh;
-  min-width: 3000px;
-}
-.footer #visual2 path {
-  width: 100vw;
-  color: #0066ff;
-}

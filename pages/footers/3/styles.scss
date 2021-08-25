@@ -57,15 +57,4 @@
         // background-color: #0066ff;
         @include center(center);
     }
-
-    #visual2 {
-        width: 100vw;
-        height: 100vh;
-        min-width: 3000px;
-
-        path {
-            width: 100vw;
-            color: #0066ff;
-        }
-    }
 }
