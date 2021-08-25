@@ -1,11 +1,7 @@
 "use strict";
-const objects = document.querySelectorAll('object');
+const listPages = document.querySelectorAll('object');
 const settingsPage = {
-    height: '100vh',
-    width: 'calc(100vw - 20px)'
+    height: '50vh',
+    width: '50vw'
 };
-objects.forEach(page => page.style.height = '100vh');
-objects.forEach(page => {
-    console.log(page);
-    Object.assign(page.style, settingsPage);
-});
+listPages.forEach(page => Object.assign(page.style, settingsPage));
