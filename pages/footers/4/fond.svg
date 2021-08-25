@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" id="visual1" viewBox="0 0 900 600" version="1.1">
+    <defs>
+        <filter id="blur1" x="-10%" y="-10%" width="120%" height="120%">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="161" result="effect1_foregroundBlur" />
+        </filter>
+    </defs>
+    <rect fill="#6600FF" />
+    <g filter="url(#blur1)">
+        <circle cx="205" cy="96" fill="#00CC99" r="357" />
+        <circle cx="540" cy="595" fill="#6600FF" r="357" />
+        <circle cx="603" cy="345" fill="#00CC99" r="357" />
+        <circle cx="856" cy="249" fill="#00CC99" r="357" />
+        <circle cx="49" cy="275" fill="#6600FF" r="357" />
+        <circle cx="336" cy="260" fill="#00CC99" r="357" />
+    </g>
+</svg>
