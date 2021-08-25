@@ -12,13 +12,20 @@ body {
   display: flex;
 }
 
-body {
+.column {
   flex-direction: column;
 }
 
 .header {
   width: 100%;
   height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5em;
+}
+
+.header {
   background: #22c1c3;
   background: linear-gradient(0deg, #22c1c3 0%, #fdbb2d 100%);
 }
