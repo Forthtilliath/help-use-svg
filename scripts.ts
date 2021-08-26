@@ -2,9 +2,9 @@ const listPages = document.querySelectorAll('object') as NodeListOf<HTMLObjectEl
 
 const settingsPage = {
     height: '50vh',
-    // height: '100vh',
-    // width: 'calc(100vw - 20px)',
-    width: '50vw'
+    width: '50vw',
+    // height: '100vh',  
+    // width: 'calc(100vw - 20px)', 
 }
 
 listPages.forEach(page => Object.assign(page.style, settingsPage));

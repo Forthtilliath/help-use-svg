@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>APUV - Aide Pour l'Utilisation des SVG</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <!-- Header avec navigation -->
+        <header class="header">
+            Exemple avec fond svg from css, et double waves from objects
+            <nav class="main">
+                <a href="#1">Lien 1</a>
+                <a href="#2">Lien 2</a>
+                <a href="#3">Lien 3</a>
+                <a href="#4">Lien 4</a>
+            </nav>
+        </header>
+
+        <!-- Container avec svg du header et du footer -->
+        <div class="container">
+            <!-- SVG du header, dans le container pour profiter de la couleur de fond -->
+            <!-- Solution avec la balise object -->
+            <div class="container_header">
+                <!-- SVG avec les dimensions 5000x200 (peut varier) -->
+                <!-- <object data="./wave-header.svg" type="image/svg+xml" width="5000" height="200"></object> -->
+                <!-- Solution avec la balise img -->
+                <!-- <img src="./wave-header.svg" alt=""> -->
+                <!-- Solution en utilisant le css -->
+                <div class="svgBackground"></div>
+            </div>
+
+            <!-- Container de la page -->
+            <div class="container_content">
+                <!-- Barre litérale-->
+                <aside></aside>
+                <!-- Contenu de la page -->
+                <section id="home"></section>
+                <section id="activities"></section>
+            </div>
+
+            <!-- SVG du footer, dans le container pour profiter de la couleur de fond -->
+            <!-- Solution avec la balise object -->
+            <div class="container_footer">
+                <!-- SVG avec les dimensions 5000x200 (peut varier) -->
+                <object data="./wave-footer.svg" type="image/svg+xml" width="5000" height="200"></object>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer_content">kjg</div>
+            <div class="footer_copyright">Tous droits réservés &copy; Forth 2021</div>
+        </footer>
+    </body>
+</html>
