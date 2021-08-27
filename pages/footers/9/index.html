@@ -6,13 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>APUV - Aide Pour l'Utilisation des SVG</title>
         <link rel="stylesheet" href="assets/styles/styles.css" />
-        <script src="assets/scripts/scripts.js"></script>
+        <script src="assets/scripts/scripts.js" defer></script>
     </head>
     <body>
         <!-- Header avec navigation -->
         <header class="header">
-            Exemple avec fond svg from css, et double waves from objects
-            <nav class="main">
+            <h2>SVG Use Header et Footer configurable</h2>
+            <nav class="primary">
                 <a href="#1">Lien 1</a>
                 <a href="#2">Lien 2</a>
                 <a href="#3">Lien 3</a>
@@ -33,10 +33,16 @@
             <!-- Container de la page -->
             <div class="container_content">
                 <!-- Barre litérale-->
-                <aside></aside>
+                <aside class="aside">
+                    <div class="aside_left"></div>
+                    <div class="aside_content"></div>
+                    <div class="aside_right"></div>
+                </aside>
                 <!-- Contenu de la page -->
-                <section id="home"></section>
-                <section id="activities"></section>
+                <main>
+                    <section id="home" class="section section1"></section>
+                    <section id="activities" class="section section2"></section>
+                </main>
             </div>
 
             <!-- SVG du footer, dans le container pour profiter de la couleur de fond -->

@@ -5,8 +5,10 @@
     --color-2: #fdbb2d;
     --color-3: #ff0000;
     --color-4: #ff9100;
+    --color-5: #ff0;
 }
 
+// Permet de styliser les gradients avec les couleurs de votre choix
 svg {
     #vert-gradient-01 {
         --color-stop-1: var(--color-2);
@@ -31,12 +33,12 @@ body {
     height: 100px;
     @include center(center);
     flex-direction: column;
-    font-size: 2rem;
+    // font-size: 2rem;
 
     background: var(--color-2);
-    background: linear-gradient(0deg, var(--color-2) 0%, var(--color-1) 100%);
+    background: linear-gradient(0deg, var(--color-2) 0%, var(--color-5) 100%);
 
-    nav.main {
+    nav.primary {
         width: calc(90px * 4);
         @include center(space-between);
 
@@ -80,6 +82,27 @@ body {
         border-radius: 20px;
         height: 1000px;
         margin: 3rem 0;
+        padding: 2rem;
+        display: flex;
+        gap: 2rem;
+
+        .aside {
+            background-color: grey;
+            min-width: 200px;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+
+            .section {
+                &.section1 {
+                }
+                &.section2 {
+                }
+            }
+        }
     }
 
     .container_footer {
@@ -97,7 +120,6 @@ body {
 
 .footer {
     width: 100%;
-    // height: 100px;
     overflow: hidden;
     @include center(center);
     flex-direction: column;
