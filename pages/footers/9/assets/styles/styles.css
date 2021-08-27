@@ -42,6 +42,22 @@ body {
   font-size: 2rem;
 }
 
+:root {
+  --color-1: #0093e9;
+  --color-2: #fdbb2d;
+  --color-3: #ff0000;
+  --color-4: #ff9100;
+}
+
+svg #vert-gradient-01 {
+  --color-stop-1: var(--color-2);
+  --color-stop-2: var(--color-3);
+}
+svg #vert-gradient-02 {
+  --color-stop-1: var(--color-3);
+  --color-stop-2: var(--color-2);
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -57,8 +73,8 @@ body {
   justify-content: center;
   flex-direction: column;
   font-size: 2rem;
-  background: #ec8339;
-  background: linear-gradient(0deg, #ec8339 0%, #ffcc5f 100%);
+  background: var(--color-2);
+  background: linear-gradient(0deg, var(--color-2) 0%, var(--color-1) 100%);
 }
 .header nav.main {
   width: calc(90px * 4);
@@ -74,12 +90,6 @@ body {
   font-size: 1.5rem;
 }
 
-.svgBackground {
-  background: url(./wave-header.svg);
-  width: 5000px;
-  height: 200px;
-}
-
 .container {
   width: 100%;
   min-height: calc(100vh - 100px - 80px - 30px);
@@ -89,13 +99,16 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: url(./fond.svg);
+  background: url(../images/fond.svg);
   background-size: cover;
 }
 .container .container_header {
   width: 100%;
   height: 120px;
   overflow: hidden;
+}
+.container .container_header .svgHeader {
+  fill: url(#vert-gradient-01);
 }
 .container .container_content {
   background-color: #fff5;
@@ -107,11 +120,12 @@ body {
 }
 .container .container_footer {
   width: 100%;
-  height: 145px;
+  height: 125px;
   overflow: hidden;
 }
-.container .container_footer object {
-  margin-top: -55px;
+.container .container_footer svg {
+  margin-top: -75px;
+  fill: url(#vert-gradient-02);
 }
 
 .footer {
@@ -121,8 +135,8 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: #ec8339;
-  background: linear-gradient(180deg, #ffcc5f 30%, #ec8339 80%);
+  background-color: var(--color-2);
+  background-image: linear-gradient(180deg, var(--color-2) 0%, var(--color-4) 40%);
 }
 .footer .footer_content {
   width: 100%;
